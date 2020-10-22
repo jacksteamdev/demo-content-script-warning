@@ -1,8 +1,8 @@
 {
-  "name": "javascript-boilerplate",
+  "name": "demo-content-script-warning",
   "version": "1.0.0",
   "private": true,
-  "description": "This Chrome Extension boilerplate supports modern, modular JavaScript and automatic reloading during development.",
+  "description": "Demonstrate install warnings for new or updated content scripts",
   "license": "MIT",
   "author": {
     "name": "Jack Steam",

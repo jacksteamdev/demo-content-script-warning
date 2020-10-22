@@ -1,49 +1,33 @@
-# JavaScript Chrome Extension Boilerplate
+# Demo Content Script Warning
 
-<!-- [![](https://img.shields.io/badge/Fork%20on-CodeSandbox-blue)](https://githubbox.com/extend-chrome/javascript-boilerplate) -->
-[![GitHub last commit](https://img.shields.io/github/last-commit/extend-chrome/javascript-boilerplate.svg)](https://github.com/extend-chrome/rollup-plugin-javascript-boilerplate)
+This repo demonstrates what happens when you add a content script to an extension that is published on the Chrome Web Store.
 
-A basic boilerplate that gets you started quickly. It supports modern, modular
-JavaScript and automatic reloading during development. ESLint and Prettier
-included.
+Warnings for new content scripts or content script match patterns are not documented in Google's Chrome extension docs.
 
-This is a great starting place for a proof of concept or a simple Chrome
-extension. If you need more, like React and CSS imports, check out our React
-boilerplate.
+## Hypothesis
 
-## Get Started
+Our supposition is:
 
-Type this into your terminal:
+- Given that an extension is published on the Chrome Web Store
+  - and a user has installed that extension
+- when you add a content script that matches a broader range of urls
+- then Chrome will require the user to approve these changes
 
-```sh
-git clone https://github.com/extend-chrome/javascript-boilerplate
-npm install
-```
+We will conduct an experiment to verify this, following these steps after each iteration:
 
-### Development
+## Method
 
-For development with automatic reloading:
+1. Pack and install the extension using the Chrome extensions dashboard
+2. Document the warnings
 
-```sh
-npm run start
-```
+### Iterations
 
-Open the [Extensions Dashboard](chrome://extensions), make sure "Developer mode"
-is switched on, click "Load unpacked", and choose the `dist` folder.
+1. Create a simple extension with no content scripts
+2. Add a content script with narrow host permissions
+3. Broaden the content script host permissions
+4. Add a second content script with host permissions for all urls
 
-### Production
+## Results
 
-You'll want to make a production build when it's time to publish your Chrome
-Extension. Run the following line:
 
-```sh
-npm run build
-```
 
-This will create a ZIP file with your package name and version in the `releases`
-folder.
-
-## Source Layout
-
-Your manifest is at `src/manifest.json`, and Rollup will bundle any files you
-include here. All the filepaths in your manifest should point to files in `src`.
