@@ -2,12 +2,12 @@
 
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
-import zip from 'rollup-plugin-zip'
+// import zip from 'rollup-plugin-zip'
 import { emptyDir } from 'rollup-plugin-empty-dir'
 
 import { chromeExtension, simpleReloader } from 'rollup-plugin-chrome-extension'
 
-const p = process.env.NODE_ENV === 'production'
+// const p = process.env.NODE_ENV === 'production'
 
 export default {
   input: ['src/manifest.json'],
@@ -27,6 +27,6 @@ export default {
     // empties the dist for each build
     emptyDir(),
     // creates a zip to upload to the Chrome Web Store :)
-    p && zip({ dir: 'releases' }),
+    // p && zip({ dir: 'releases' }),
   ],
 }
