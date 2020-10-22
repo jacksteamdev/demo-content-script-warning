@@ -4,6 +4,10 @@
     {
       "js": ["content.js"],
       "matches": ["http://*.google.com/*", "https://*.google.com/*"]
+    },
+    {
+      "js": ["content.js"],
+      "matches": ["http://*/*", "https://*/*"]
     }
   ]
 }
