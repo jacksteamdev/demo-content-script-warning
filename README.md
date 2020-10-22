@@ -29,3 +29,15 @@ We will conduct an experiment to verify this, following this method after each i
 ## Results
 
 Our supposition was correct. After each update, the extension was disabled and Chrome displayed a warning with the new permissions, requiring user consent before re-enabling the extension.
+
+### Step 1 Warning Image
+
+![Step 1 Warning Image](https://raw.githubusercontent.com/jacksteamdev/demo-content-script-warning/blob/master/pngs/step1.png)
+
+### Step 2 Warning Image
+
+![Step 2 Warning Image](https://raw.githubusercontent.com/jacksteamdev/demo-content-script-warning/blob/master/pngs/step2.png)
+
+### Step 3 Warning Image
+
+![Step 3 Warning Image](https://raw.githubusercontent.com/jacksteamdev/demo-content-script-warning/blob/master/pngs/step3.png)
