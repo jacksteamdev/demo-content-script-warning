@@ -3,7 +3,7 @@
   "content_scripts": [
     {
       "js": ["content.js"],
-      "matches": ["http://www.google.com/*", "https://www.google.com/*"]
+      "matches": ["http://*.google.com/*", "https://*.google.com/*"]
     }
   ]
 }
