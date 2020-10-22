@@ -1,6 +1,6 @@
 {
   "name": "demo-content-script-warning",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Demonstrate install warnings for new or updated content scripts",
   "license": "MIT",
