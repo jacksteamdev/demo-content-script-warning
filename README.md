@@ -13,7 +13,7 @@ Our supposition is:
 - when you add a content script that matches a broader range of urls
 - then Chrome will require the user to approve these changes
 
-We will conduct an experiment to verify this, following these steps after each iteration:
+We will conduct an experiment to verify this, following this method after steps 1, 2, 3:
 
 ## Method
 
@@ -22,10 +22,10 @@ We will conduct an experiment to verify this, following these steps after each i
 
 ### Iterations
 
-1. Create a simple extension with no content scripts
-2. Add a content script with narrow host permissions
-3. Broaden the content script host permissions
-4. Add a second content script with host permissions for all urls
+0. Create a simple extension with no content scripts
+1. Add a content script with narrow host permissions
+2. Broaden the content script host permissions
+3. Add a second content script with host permissions for all urls
 
 ## Results
 
